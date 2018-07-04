@@ -1,0 +1,30 @@
+id,parent_id,url,zh,en,started,ended,updated,domain_tag_ids,media_tag_ids,tool_tag_ids,stage_tag_ids,state_tag_ids,license_tag_ids
+llscanner,,https://etblue.github.io/llscanner/,勞基法掃描器,Labor Laws Scanner,2017-03-01,2018-01-01,,open data; law; labor,web app,web planning / ux; ui design; react; react router; redux; webpack; semantic ui; schema design,revising,handling,mit
+llscanner theme song,llscanner,https://blend.io/etblue/scanner,《勞基法掃描器》主題曲,"Theme Song for ""Labor Laws Scanner""",2017-09-01,,,open data; law; labor,song,garage band; compose; lyric; vocal,online,finished,cc by-nc
+llscanner release note,llscanner,https://etblue.blogspot.com/2018/02/experiment-labor-laws-scanner.html,實驗心得：勞基法掃描器——如何把法條轉譯成自動化的判讀程式？以勞動基準法為例,Release Note for Labor Laws Scanner,,2018-02-28,,open data; law; labor,article,,online,finished,
+jrpilot,,https://etblue.github.io/jrpilot/,提案闖天關,JRConf Proposals Explorer,2017-08-01,2017-08-01,,open data; law; public deliberation,web app,web planning / ux; ui design; react; semantic ui; schema design,online,finished,mit
+jrpilot release note,jrpilot,https://etblue.blogspot.com/2017/08/open-data-combo-deliberative-democracy.html,實驗心得：提案闖天關—— Open Data 與審議民主怎麼 Combo？以司改國是會議資料為例,Release Note for JRConf Proposals Explorer,,2017-08-24,,open data; law; public deliberation,article,,online,finished,
+ocf web,,http://ocf.tw/,開放文化基金會官方網站,Official Website of Open Culture Foundation,2016-06-01,2016-12-01,,open culture,content site,web planning / ux; project management; semantic ui; jekyll; schema design,online,finished,mit
+ocf web release note,ocf web,https://etblue.blogspot.tw/2017/06/ocf-official-website.html,成果發表：開放文化基金會（OCF）官方網站,Release Note for Official Website of Open Culture Foundation,,2017-06-22,,open culture,article,,online,finished,
+debater,,http://etblue.github.io/debater/,辯論家,Debater,2016-03-01,2016-08-01,,open data; media; gossip,web app,web planning / ux; ui design; bootstrap; slim; gulp,online,finished,mit
+debater speech,debater,https://docs.google.com/presentation/d/1RxJxZ_HAWZkDNIy9y2UZPZ3M7oNIxcdLJd6UzIO9egc/edit?usp=sharing,Debater 辯論家～網路筆戰大亂鬥 ,Speech about Debater in COSCUP 2016,,2016-08-21,,open data; media; gossip,speech,,online,finished,
+debater theme music,debater,https://blend.io/etblue/debater,《Debater》主題曲,"Theme Song for ""Debater""",2016-07-01,,2018-03-31,open data; media; gossip,song,garage band; compose; lyric; vocal,online,finished,cc by-nc
+debater speech note,debater,https://etblue.blogspot.com/2018/01/debater-coscup-2016.html,演講紀錄：Debater 辯論家～網路筆戰大亂鬥 + 同名主題曲 @ COSCUP 2016,,,2018-01-19,,open data; media; gossip,article,,online,finished,
+gw2inventory,,http://etblue.github.io/gw2inventory,Guild Wars 2 Inventory,Guild Wars 2 Inventory,2015-11-01,,,game,web app,web planning / ux; ui design; slim; bootstrap; gulp,online,handling,mit
+hackfoldr 2.0,,http://beta.hackfoldr.org/,HackFoldr 2.0,HackFoldr 2.0,2014-07-01,2014-10-01,,open culture,web app,ui design; handlebars; jade; semantic ui; fire.app,online,finished,
+storyliner,,https://etblue.github.io/storyliner,Storyliner,Storyliner - The Interactive Gossip Viewer,2018-04-01,,,open data; media; gossip,web app,web planning / ux; ui design; react; semantic ui; gh pages,online,handling,
+storyliner release note,storyliner,https://etblue.blogspot.com/2018/04/storyliner-interactive-gossip-viewer.html,成果發表：Storyliner——輕鬆替八卦事件製作互動式懶人包，以囧星人與聯合報願景工程的採訪爭議為例,Release Note for Storyliner - The Interactive Gossip Viewer,2018-04-16,2018-04-17,,open data; media; gossip,article,,online,finished,
+mermaid,,https://blend.io/etblue/mermaid,美人魚,Mermaid,2018-04-01,,,labor,song,garage band; compose; vocal,online,finished,cc by-nc
+noodles,,https://blend.io/etblue/noodles,金黃的泡麵,Noodles,2014-10-01,,,md lang; education,song,garage band; compose; lyric; vocal,online,finished,cc by
+flower,,https://blend.io/etblue/flower,雨夜花‧轉來,Flowers In The Rainy Night: Detention,2017-02-01,,,tw lang; game; formosa,song,garage band; compose; lyric; vocal,online,finished,cc by
+ocean,,https://blend.io/etblue/ocean,《如果台灣的四周是海洋》主題曲,"Ocean: Theme Song for ""If Taiwan is Surrounded by the Sea""",2017-11-01,,,formosa,song,garage band; compose; lyric; vocal,online,finished,cc by
+blulugamma,,https://blend.io/etblue/blulugamma,《Blulu Gamma 版》主題曲,"Theme Song for ""Blulu Gamma Metrics""",2017-04-01,,,public deliberation,song,garage band; compose; lyric; vocal,online,finished,cc by-nc
+nostalgia,,https://blend.io/etblue/nostalgia,鄉愁,Nostalgia,2018-02-01,,,formosa,song,garage band; compose; vocal,online,finished,cc by-nc
+face,,https://blend.io/etblue/face,面,Face,2017-05-01,,,labor,song,garage band; compose; lyric; vocal,online,finished,cc by-nc
+loud,,https://blend.io/etblue/loud,勞,Loud,2017-05-01,,,labor,song,garage band; compose; lyric; vocal,online,finished,cc by-nc
+monologue en,,https://blend.io/etblue/monologue-en,獨白（英）,Monologue (English Version),2017-02-01,,,game,song,garage band; compose; vocal,online,finished,cc by
+slow,,https://blend.io/etblue/slow,聲聲慢,Slowing Sound,2016-01-01,,,literature,song,garage band; compose; vocal,online,finished,cc by
+piglets,,https://blend.io/etblue/piglets,三小豬,Piglets,2017-12-01,,,labor,song,garage band; compose; vocal,online,finished,cc by-nc
+blupa,,https://blend.io/etblue/blupa,《Blupa 量表》主題曲,"Theme Song for ""Blupa Metrics""",2016-04-01,,,open culture,song,garage band; compose; lyric; vocal,online,finished,cc by
+fault,,https://blend.io/etblue/fault,錯,Fault,2015-03-01,,,,song,garage band; compose; lyric; vocal,online,finished,cc by-nc
+berry,,https://blend.io/etblue/berry,莓,Berry,2017-05-01,,,education,song,garage band; compose; lyric; vocal,online,finished,cc by-nc

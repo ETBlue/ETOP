@@ -1,0 +1,97 @@
+id,parent_id,category_id,zh,en
+cc,,license,CC,CC
+cc0,,license,CC0,CC0
+gpl,,license,GPL,GPL
+mit,,license,MIT,MIT
+mpl,,license,MPL,MPL
+wtfpl,,license,WTFPL,WTFPL
+cc by,cc,license,CC BY,CC BY
+cc by-nc,cc,license,CC BY-NC,CC BY-NC
+cc by-nc-nd,cc,license,CC BY-NC-ND,CC BY-NC-ND
+cc by-nc-sa,cc,license,CC BY-NC-SA,CC BY-NC-SA
+cc by-nd,cc,license,CC BY-ND,CC BY-ND
+cc by-sa,cc,license,CC BY-SA,CC BY-SA
+article,,media,文章,Article
+artwork,,media,視覺,Artwork
+music,,media,音樂,Music
+web,,media,網頁,Web
+speech,,media,演講,Speech
+animation,artwork,media,動畫,Animation
+design,artwork,media,設計,Design
+illustration,artwork,media,插畫,Illustration
+comic,artwork,media,漫畫,Comic
+jingle,music,media,Jingle,Jingle
+song,music,media,歌,Song
+content site,web,media,內容網站,Content Site
+web app,web,media,應用程式網站,Web App
+developing,,stage,Developing,Developing
+idea,,stage,Idea,Idea
+online,,stage,Online,Online
+revising,,stage,Revising,Revising
+discontinued,,state,棄坑,Discontinued
+finished,,state,已完成,Finished
+handling,,state,持續進行中,Handling
+labor,,subject,勞工,Labor
+media,,subject,媒體,Media
+gossip,media,subject,八卦,Gossip
+law,,subject,法律,Law
+open culture,,subject,開放文化,Open Culture
+open gov,,subject,開放政府,Open Government
+participation,open gov,subject,參與,Civic Participation
+transparency,open gov,subject,透明,Transparency
+public deliberation,participation,subject,公共審議,Public Deliberation
+open data,transparency,subject,開放資料,Open Data
+game,,subject,電動遊戲,Gaming
+formosa,,subject,福爾摩沙（台澎）,Formosa (Taiwan and Penghu)
+language,,subject,語言,Language
+md lang,language,subject,Mandarin,Taiwanese Mandarin
+tw lang,language,subject,台語,Taiwanese
+education,,subject,教育,Education
+literature,,subject,文學,Literature
+songwriting,,tool,寫歌,Song Writing
+web dev,,tool,網站開發,Web Development
+garage band,arrange,tool,GarageBand,GarageBand
+bootstrap,css framework,tool,Bootstrap,Bootstrap
+semantic ui,css framework,tool,Semantic UI,Semantic UI
+sass,css preprocessor,tool,Sass,Sass
+fire.app,dev tool,tool,Fire.app,Fire.app
+git,dev tool,tool,Git,Git
+gulp,dev tool,tool,Gulp,Gulp
+sublime text,dev tool,tool,Sublime Text,Sublime Text
+webpack,dev tool,tool,Webpack,Webpack
+gh pages,dev tool,tool,gh-pages,gh-pages
+css3,front-end basic,tool,CSS3,CSS3
+es6 / es2015,front-end basic,tool,ES6 / ES2015,ES6 / ES2015
+html5,front-end basic,tool,HTML5,HTML5
+jquery,js lib,tool,jQuery,jQuery
+react,js lib,tool,React,React
+react router,js lib,tool,React Router,React Router
+redux,js lib,tool,Redux,Redux
+underscore,js lib,tool,Underscore,Underscore
+arrange,songwriting,tool,編曲,Arranging
+compose,songwriting,tool,作曲,Composing
+lyric,songwriting,tool,作詞,Lyrics Writing
+vocal,songwriting,tool,主唱,Vocal
+handlebars,template engine,tool,Handlebars,Handlebars
+jade,template engine,tool,Jade,Jade
+jekyll,template engine,tool,Jekyll,Jekyll
+slim,template engine,tool,Slim,Slim
+project management,web dev,tool,專案管理,Project Management
+ui design,web dev,tool,使用者介面設計,UI Design
+web front-end,web dev,tool,網頁前端工程,Web Front-End
+web planning / ux,web dev,tool,網站企畫 / UX,Web Planning / UX
+css framework,web front-end,tool,CSS 框架,CSS Framework
+css preprocessor,web front-end,tool,CSS Preprocessors,CSS Preprocessor
+dev tool,web front-end,tool,開發工具,Dev Tool
+front-end basic,web front-end,tool,前端基礎,Front-End Basic
+js lib,web front-end,tool,JS 函式庫,JavaScript Library
+template engine,web front-end,tool,樣版引擎,Template Engine
+schema design,web planning / ux,tool,Schema 規劃,Schema Design
+visual comm,,tool,視覺傳達,Visual Communication
+ai,graphic,tool,Adobe Illustrator,Adobe Illustrator
+ps,graphic,tool,Adobe Photoshop,Adobe Photoshop
+ae,animate,tool,Adobe After Effect,Adobe After Effect
+premiere,animate,tool,Adobe Premiere,Adobe Premiere
+clip,graphic,tool,Clip Studio Art,Clip Studio Art
+graphic,visual comm,tool,平面美術,2D Graphic
+video,visual comm,tool,動畫影片,Animation
