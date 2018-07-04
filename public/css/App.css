@@ -1,0 +1,189 @@
+.App {
+  --link-color: hsla(0,0%,0%,0.85);
+  --logo-color: hsla(200, 50%, 30%, 1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-main {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.App-footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.App a,
+.App a:link,
+.App a:hover,
+.App a:active,
+.App .ui.list .item a.header,
+.App .ui.list .item a.header:link,
+.App .ui.list .item a.header:hover,
+.App .ui.list .item a.header:active {
+  color: var(--link-color)!important;
+  transition: 0.25s ease-out!important;
+}
+
+.App a,
+.App a:link {
+  opacity: 0.85;
+}
+
+.App a:not(.disabled):hover,
+.App a:not(.disabled):active {
+  opacity: 1!important;
+}
+
+.App-name {
+  font-family: 'Dokdo', cursive!important;
+  font-size: 3rem!important;
+  color: var(--logo-color)!important;
+  text-shadow:
+    0 0 3rem hsla(200, 50%, 90%, 1),
+    4px 4px 0 hsla(200, 0%, 100%, 1),
+    4px -2px 0 hsla(200, 0%, 100%, 1),
+    -2px 4px 0 hsla(200, 0%, 100%, 1),
+    -2px -2px 0 hsla(200, 0%, 100%, 1);
+}
+
+.Category .ui.menu .App-name {
+  padding: 0 1rem 0 0;
+  margin-left: 0;
+}
+
+.Category .ui.menu a.App-name:hover {
+  background: none!important;
+}
+
+.Category .ui.menu a.item:not(.App-name) {
+  border-width: 2px 3px;
+  border-color: transparent;
+  border-style: dashed;
+  border-radius: 10rem 1rem / 1rem 10rem;
+}
+
+.Category .ui.menu a.item:hover:not(.App-name),
+.Category .ui.menu a.active.item:not(.App-name),
+.Category .ui.menu a.active.item:not(.App-name):hover {
+  opacity: 1;
+  text-shadow: 0 0 1px hsla(200, 10%, 50%, 0.5);
+  border-color: hsla(200, 40%, 50%, 0.5);
+  box-shadow: 0 0 0 2px hsla(200, 50%, 100%, 0.5);
+}
+
+.Category .ui.menu a.item:hover:not(.App-name) {
+  background-color: hsla(200,50%,90%,0.3);
+}
+
+.Category .ui.menu a.active.item:not(.App-name),
+.Category .ui.menu a.active.item:not(.App-name):hover {
+  background-color: hsla(200,50%,90%,0.5);
+}
+
+.App-intro {
+  font-family: 'Gaegu', cursive;
+/*
+  font-family: 'Architects Daughter', cursive;
+  font-family: 'Coming Soon', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'East Sea Dokdo', cursive;
+*/
+  font-size: 1.5rem;
+  color: hsla(200, 50%, 15%, 0.85);
+  text-shadow:
+    0 0 3rem hsla(200, 50%, 90%, 1);
+}
+
+.App-header,
+.App-footer {
+  color: hsla(200, 50%, 15%, 0.85);
+  background: repeating-linear-gradient(-30deg, hsla(200, 50%, 60%, 0.8),  hsla(200, 50%, 60%, 0.6),  hsla(200, 50%, 60%, 0.8) 50rem);
+  border-style: solid;
+  border-image: repeating-linear-gradient(45deg, hsla(200, 50%, 60%, 0.5), hsla(200, 50%, 60%, 0.3), hsla(200, 50%, 60%, 0.5) 20rem) 20 / 0.2rem;
+  border-radius: 50rem 1rem / 1rem 50rem;
+  box-shadow: 0 0 0 0.2rem hsla(200, 50%, 60%, 0.5);
+}
+
+.App-header,
+.App-body,
+.App-footer {
+  padding: 2rem 0;
+}
+
+.App-footer .link {
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+a.Home-category.ui.header {
+  display: block;
+  color: hsla(200, 40%, 50%, 1)!important;
+  border-width: 2px 3px;
+  border-color: hsla(200, 40%, 50%, 0.5);
+  border-style: dashed;
+  border-radius: 10rem 1rem / 1rem 10rem;
+  padding-top: 0.5rem;
+  opacity: 1;
+}
+
+a.Home-category.ui.header:hover {
+  border-color: hsla(200, 40%, 50%, 0.7);
+  box-shadow: 0 0 0 2px hsla(200, 50%, 60%, 0.3);
+  background-color: hsla(60, 50%, 100%, 0.85);
+}
+
+a.Home-category.ui.header .sub.header {
+  color: hsla(200, 40%, 50%, 0.85);
+}
+
+a.Home-category.ui.header:hover .sub.header {
+  color: hsla(200, 40%, 50%, 1);
+}
+
+.ui.list .item {
+  position: relative;
+}
+.ui.list .item .icon {
+  color: hsla(60,50%,40%,0.5);
+}
+.ui.list .item .content {
+  width: 100%;
+}
+.ui.list .item .content .tag-count {
+  position: absolute;
+  right: 0;
+  margin-right: 0;
+  color: hsla(60,50%,30%,0.85);
+  background: hsla(60,30%,50%,0.2);
+}
+
+.ui.list .item .content a.header,
+.ui.list .item .content a.description {
+  opacity: 0.7;
+}
+
+.ui.list .item .content a.description {
+  color: hsla(0,0%,30%,0.85)!important;
+}
+
+.ui.list .item .icon.disabled,
+.ui.list .item .content .tag-count.disabled,
+.ui.list .item .content a.header.disabled,
+.ui.list .item .content a.description.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.ui.list .item .icon.disabled {
+  color: hsla(60,0%,30%,0.5);
+}
+
+.ui.list .item .content .tag-count.disabled {
+  color: hsla(60,0%,30%,0.85);
+  background: hsla(60,0%,50%,0.2);
+}
+
