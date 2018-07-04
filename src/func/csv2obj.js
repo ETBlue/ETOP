@@ -6,6 +6,7 @@ export default (csv, mapper = null, collector = null) => {
   }
   let result = {}
   const titles = csv[0]
+  console.log(csv)
   console.log(titles)
   for (let i = 1; i < csv.length; i++) {
     const lineArray = csv[i]
