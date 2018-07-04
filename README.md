@@ -1,6 +1,6 @@
 # ETBlue's Open Playground
 
-https://etblue.github.io
+https://etblue.github.io/ETOP
 
 # Auto-Generated Content
 
