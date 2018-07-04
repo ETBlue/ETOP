@@ -1,4 +1,5 @@
 export default {
+  repo: 'ETOP',
   name: {
     zh: 'ET 的開源遊樂場',
     en: "ET's Open Playground"

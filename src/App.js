@@ -77,7 +77,7 @@ const Category = (match) => {
 }
 
 const App = () => (
-  <Router>
+  <Router basename={`/${SITE_SETTING.repo}`}>
     <div className='App'>
       <Route exact path='/' render={() => Home({tagCategory, tagWorkMapper, tagObj, categoryObj})} />
       <Route path='/:categoryId/:tagId?' render={({match}) => Category(match)} />
