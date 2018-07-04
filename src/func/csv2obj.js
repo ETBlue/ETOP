@@ -1,7 +1,7 @@
 import date2range from './date2range'
 
 export default (csv, mapper = null, collector = null) => {
-  if (!csv || csv.length === 0) {
+  if (!csv || csv.length === 0 || typeof csv !== 'object') {
     return {}
   }
   let result = {}
