@@ -43,6 +43,5 @@ export default (csv, mapper = null, collector = null) => {
     // for all
     result[resultItem.id] = resultItem
   }
-  console.log(result)
   return result
 }

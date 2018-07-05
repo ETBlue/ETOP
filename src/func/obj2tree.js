@@ -42,6 +42,5 @@ export default (obj) => {
       console.log(orphans)
     }
   }
-  console.log(result)
   return result
 }

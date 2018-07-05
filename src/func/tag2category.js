@@ -14,6 +14,5 @@ export default (tree, obj) => {
     }
     result[obj[tagId].category_id][tagId] = tree[tagId]
   })
-  console.log(result)
   return result
 }

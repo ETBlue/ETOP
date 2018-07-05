@@ -1,7 +1,7 @@
-id,zh,en
-subject,議題,Subjects
-media,媒介,Media Types
-tool,技術工具,Skills and Tools
-stage,專案生命週期,Stages in Project Life Cycle
-state,目前狀態,Current State
-license,授權,License
+id,zh,en,abbr
+subject,議題,Subjects,Subjects
+media,媒介,Media Types,Media
+tool,技術工具,Skills and Tools,Skills
+stage,專案生命週期,Stages in Project Life Cycle,Stages
+state,目前狀態,Current State,State
+license,授權,License,License
