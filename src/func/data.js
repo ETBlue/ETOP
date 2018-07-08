@@ -8,12 +8,13 @@ import categoryCsv from '../data/ETOP - data - category.csv'
 import tagCsv from '../data/ETOP - data - tag.csv'
 import workCsv from '../data/ETOP - data - work.csv'
 
-const categoryObj = csv2obj(categoryCsv)
-const tagObj = csv2obj(tagCsv)
+let tagSetByCategory = {}
+const categoryObj = csv2obj({csv: categoryCsv, tagSetByCategory})
+const tagObj = csv2obj({csv: tagCsv, tagSetByCategory})
 const tagSet = new Set(Object.keys(tagObj))
 let tagWorkMapper = {}
 let workTagSet = new Set()
-const workObj = csv2obj(workCsv, tagWorkMapper, workTagSet)
+let workObj = csv2obj({csv: workCsv, tagWorkMapper, workTagSet, tagSetByCategory})
 
 // make sure all tags have their place in the tag sheet
 if (minusSet(workTagSet, tagSet).size > 0) {
@@ -23,9 +24,15 @@ if (minusSet(workTagSet, tagSet).size > 0) {
 const workTree = obj2tree(workObj)
 const tagTree = obj2tree(tagObj)
 
-mapWorkTagFromTree(tagTree, [], tagWorkMapper)
+mapWorkTagFromTree({tagTree, path: [], tagWorkMapper})
 
-const tagCategory = tag2category(tagTree, tagObj)
+for (const tagId of tagSetByCategory.subject) {
+  for (const workId of tagWorkMapper[tagId]) {
+    workObj[workId].complete_subject_tag_ids.add(tagId)
+  }
+}
+
+const tagCategory = tag2category({tagTree, tagObj, workObj})
 
 export {
   categoryObj,

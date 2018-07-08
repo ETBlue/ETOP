@@ -126,50 +126,6 @@
   text-align: center;
 }
 
-.TagMenu.ui.menu .item {
-  padding: 0!important;
-}
-
-.TagMenu.ui.menu .item .menu {
-  margin: 0!important;
-}
-
-.TagMenu.ui.menu>.item>.link {
-  border: 2px hsla(60,30%,70%,0.5) solid;
-}
-
-.TagMenu.ui.menu>.item>.menu {
-  border-top: 2px hsla(60,30%,70%,0.5) solid;
-}
-
-.TagMenu.ui.menu>.item>.menu>.item>.menu {
-  border-top: 2px hsla(60,30%,70%,0.5) dashed;
-}
-
-.TagMenu.ui.menu>.item>.menu>.item>.menu>.item>.menu {
-  border-top: 2px hsla(60,30%,70%,0.5) dotted;
-}
-
-.TagMenu.ui.menu .item a.link {
-  font-weight: 400;
-  display: block;
-  padding: 0.2rem 0.5rem;
-  border-radius: 5px;
-}
-
-.TagMenu.ui.menu .item a.link .tag-count {
-  margin: 0 0 0 0.5rem;
-  float: right;
-  color: hsla(60,50%,30%,0.85);
-  background: hsla(60,30%,50%,0.2);
-}
-
-.TagMenu.ui.menu .item a.link .description {
-  display: block;
-  font-size: 0.85em;
-  opacity: 0.7;
-}
-
 .App-intro {
   font-family: 'Gaegu', cursive;
 /*
@@ -244,7 +200,8 @@
   position: relative;
 }
 .TagList.ui.list .item .icon {
-  color: hsla(60,50%,40%,0.5);
+  color: hsla(60,50%,40%,0.7);
+  opacity: 0.7;
 }
 .TagList.ui.list .item .content,
 .TagList.ui.list .item .list {
@@ -255,16 +212,25 @@
   right: 0;
   margin-right: 0;
   color: hsla(60,50%,30%,1);
-  background: hsla(60,30%,50%,0.3);
+  background: hsla(60,30%,70%,0.5);
 }
 
+.TagList.ui.list .item .content a.description {
+  color: hsla(0,0%,30%,0.85)!important;
+}
+
+.TagList.ui.list .item .icon,
+.TagList.ui.list .item .content .tag-count,
 .TagList.ui.list .item .content a.header,
 .TagList.ui.list .item .content a.description {
   opacity: 0.7;
 }
 
-.TagList.ui.list .item .content a.description {
-  color: hsla(0,0%,30%,0.85)!important;
+.TagList.ui.list .item .icon.active,
+.TagList.ui.list .item .content .tag-count.active,
+.TagList.ui.list .item .content a.header.active,
+.TagList.ui.list .item .content a.description.active {
+  opacity: 1;
 }
 
 .TagList.ui.list .item .icon.disabled,
@@ -275,13 +241,17 @@
   cursor: default;
 }
 
+.TagList.ui.list .item .content a.description.active {
+  color: var(--link-color)!important;
+}
+
 .TagList.ui.list .item .icon.disabled {
   color: hsla(60,0%,30%,0.5);
 }
 
 .TagList.ui.list .item .content .tag-count.disabled {
-  color: hsla(60,0%,30%,0.85);
-  background: hsla(60,0%,50%,0.2);
+  color: hsla(60,0%,30%,1);
+  background: hsla(60,0%,70%,0.5);
 }
 
 .WorkListItem a.ui.header {

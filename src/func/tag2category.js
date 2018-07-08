@@ -1,18 +1,18 @@
-export default (tree, obj) => {
-  if (!obj || typeof obj !== 'object' ||
-    !tree || typeof tree !== 'object') {
+export default ({tagTree, tagObj, workObj}) => {
+  if (!tagObj || typeof tagObj !== 'object' ||
+    !tagTree || typeof tagTree !== 'object') {
     return {}
   }
   let result = {}
-  Object.keys(tree).forEach((tagId, tagIdIndex) => {
-    if (!obj[tagId]) {
+  Object.keys(tagTree).forEach((tagId, tagIdIndex) => {
+    if (!tagObj[tagId]) {
       console.log(`oops, no ${tagId} in original data`)
       return
     }
-    if (!result[obj[tagId].category_id]) {
-      result[obj[tagId].category_id] = {}
+    if (!result[tagObj[tagId].category_id]) {
+      result[tagObj[tagId].category_id] = {}
     }
-    result[obj[tagId].category_id][tagId] = tree[tagId]
+    result[tagObj[tagId].category_id][tagId] = tagTree[tagId]
   })
   return result
 }

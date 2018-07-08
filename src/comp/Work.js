@@ -34,9 +34,12 @@ export default (match) => {
     }
   })
   const allTagList = Object.keys(categoryObj).map((categoryId, categoryIdIndex) => {
-    const tagIds = workItemData[categoryId + '_tag_ids']
+    let tagIds = workItemData[categoryId + '_tag_ids']
     if (!tagIds) {
       return null
+    }
+    if (categoryId === 'subject') {
+      tagIds = Array.from(workItemData.complete_subject_tag_ids)
     }
     const tagList = tagIds.map((tagId, tagIdIndex) => {
       return (

@@ -21,17 +21,17 @@ const sortTagByCount = ({tagArray}) => {
 }
 
 let depthCount = 0
-const TagList = ({categoryId, tagTree, depth}) => {
+const TagList = ({categoryId, tagTree, depth, urlTagId}) => {
   depthCount += 1
   const sortedTags = sortTagByCount({tagArray: Object.keys(tagTree)})
   const tagList = sortedTags.map((tagId, tagIdIndex) => {
     let subTags = null
     if (depthCount < depth) {
-      const subTagList = TagList({categoryId, tagTree: tagTree[tagId], depth})
+      const subTagList = TagList({categoryId, tagTree: tagTree[tagId], depth, urlTagId})
       subTags = subTagList
     }
     const count = tagWorkMapper[tagId].size
-    const state = count === 0 ? 'disabled' : ''
+    const state = count === 0 ? 'disabled' : urlTagId === tagId ? 'active' : ''
     let size
     switch (depthCount) {
       case 1:

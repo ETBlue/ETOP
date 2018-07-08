@@ -21,7 +21,7 @@ const WorkList = ({categoryId, tagId}) => {
   }
   let currentTag
   let workIdSet = new Set()
-  if (!tagId) {
+  if (!tagId || !tagObj[tagId]) {
     Object.keys(tagCategory[categoryId]).forEach((topLevelTagId, topLevelTagIdIndex) => {
       for (let elem of tagWorkMapper[topLevelTagId]) {
         workIdSet.add(elem)
@@ -79,7 +79,7 @@ const WorkList = ({categoryId, tagId}) => {
 export default (match) => {
   const categoryId = match.params.categoryId
   const tagId = match.params.tagId
-  const tagList = TagList({categoryId, tagTree: tagCategory[categoryId], depth: 5})
+  const tagList = TagList({categoryId, tagTree: tagCategory[categoryId], depth: 5, urlTagId: tagId})
   const workList = WorkList({categoryId, tagId})
   return (
     <div className='Category App-main'>

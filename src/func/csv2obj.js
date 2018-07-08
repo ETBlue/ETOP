@@ -1,6 +1,6 @@
 import date2range from './date2range'
 
-export default (csv, mapper = null, collector = null) => {
+export default ({csv, tagWorkMapper = null, workTagSet = null, tagSetByCategory = null}) => {
   if (!csv || csv.length === 0 || typeof csv !== 'object') {
     return {}
   }
@@ -17,14 +17,14 @@ export default (csv, mapper = null, collector = null) => {
         } else {
           resultItem[title] = lineArray[titleIndex].split(';').map((tagId) => {
             const trimedTagId = tagId.trim()
-            if (collector) {
-              collector.add(trimedTagId)
+            if (workTagSet) {
+              workTagSet.add(trimedTagId)
             }
-            if (mapper) {
-              if (mapper[trimedTagId] === undefined) {
-                mapper[trimedTagId] = new Set()
+            if (tagWorkMapper) {
+              if (tagWorkMapper[trimedTagId] === undefined) {
+                tagWorkMapper[trimedTagId] = new Set()
               }
-              mapper[trimedTagId].add(lineArray[titles.indexOf('id')])
+              tagWorkMapper[trimedTagId].add(lineArray[titles.indexOf('id')])
             }
             return trimedTagId
           })
@@ -34,11 +34,22 @@ export default (csv, mapper = null, collector = null) => {
         resultItem[title] = lineArray[titleIndex]
       }
     })
+    // for category
+    if (resultItem.parent_id === undefined && tagSetByCategory) {
+      tagSetByCategory[resultItem.id] = new Set()
+    }
+    // for tag
+    if (resultItem.category_id && tagSetByCategory) {
+      tagSetByCategory[resultItem.category_id].add(resultItem.id)
+    }
     // for works
     if (resultItem.started ||
       resultItem.ended ||
       resultItem.updated) {
       resultItem.duration = date2range(resultItem.started, resultItem.ended, resultItem.updated)
+    }
+    if (resultItem.subject_tag_ids) {
+      resultItem.complete_subject_tag_ids = new Set()
     }
     // for all
     result[resultItem.id] = resultItem
